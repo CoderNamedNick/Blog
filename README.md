@@ -1,2 +1,2 @@
 # Blog
- Nicks Blog
+ Nick's Blog
