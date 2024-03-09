@@ -2,18 +2,18 @@ import React from "react";
 
 const Welcome = () => {
   return(
-    <div>
+    <div className="Main-welcome-div">
       <h1>Nick.Blog</h1>
-      <div>
-        <ul>
+      <div className="list-div">
+        <ul className="welcome-list">
           <li>Recent Blogs</li>
           <li>Code Related</li>
           <li>Family/Friends</li>
           <li>Work</li>
           <li>Other Topics</li>
-          <li>Support Nick.Blog</li>
         </ul>
       </div>
+      <h3>Support Nick.Blog</h3>
     </div>
   )
 }

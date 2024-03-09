@@ -18,3 +18,29 @@ code {
   width: 100%;
   height: 100vh;
 }
+.Main-welcome-div {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.list-div {
+  margin-left: 5%; /* You may adjust this value based on your design */
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+}
+
+.welcome-list {
+  display: flex;
+  gap: 2vw; /* Using viewport width as a responsive unit for gap */
+  flex-direction: row;
+  list-style: none;
+  font-size: 20px;
+}
