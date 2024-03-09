@@ -18,7 +18,7 @@ code {
   width: 100%;
   height: 100vh;
 }
-.Main-welcome-div {
+.Header-welcome-div {
   position: fixed;
   top: 0;
   width: 100%;
@@ -53,4 +53,7 @@ code {
   h3 {
     display: none; /* Hide h1 and h3 at 500px or less */
   }
+}
+.intro-div{
+  padding-top: 100px;
 }
