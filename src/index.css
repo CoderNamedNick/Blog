@@ -29,8 +29,7 @@ code {
 }
 
 .list-div {
-  margin-left: 5%; /* You may adjust this value based on your design */
-  height: 100%;
+  height: 86px;
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -39,8 +38,19 @@ code {
 
 .welcome-list {
   display: flex;
-  gap: 2vw; /* Using viewport width as a responsive unit for gap */
+  gap: 11vw; /* Using viewport width as a responsive unit for gap */
   flex-direction: row;
   list-style: none;
   font-size: 20px;
+}
+@media only screen and (max-width: 1250px) {
+  .welcome-list {
+    gap: 3vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  h1,
+  h3 {
+    display: none; /* Hide h1 and h3 at 500px or less */
+  }
 }
