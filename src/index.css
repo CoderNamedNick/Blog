@@ -79,13 +79,14 @@ a:hover{
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: #5b6974;
-  padding: 10px;
+  padding: 30px;
+  gap: 20px;
 }
 .Grid-Items{
   background-color: rgba(43, 148, 139, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
-  font-size: 20px;
+  font-size: 22px;
   text-align: left;
   white-space: normal;
 }
