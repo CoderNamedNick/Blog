@@ -80,15 +80,63 @@ a:hover{
 .Coding-Blogs-Grid-Container{
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #5b6974;
+  background-color: #354d57;
   padding: 30px;
   gap: 20px;
 }
-.Grid-Items{
-  background-color: rgba(43, 148, 139, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+.Coding-Grid-Items{
+  background-color: rgba(29, 43, 41, 0.8);
+  border: 3px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 22px;
   text-align: left;
   white-space: normal;
+}
+.Family-Blogs-Grid-Container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #754e73;
+  padding: 30px;
+  gap: 20px;
+}
+.Family-Grid-Items{
+  background-color: rgba(107, 57, 117, 0.8);
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 22px;
+  text-align: left;
+  white-space: normal;
+  color: whitesmoke;
+}
+.Work-Blogs-Grid-Container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2c34a091;
+  padding: 30px;
+  gap: 20px;
+}
+.Work-Grid-Items{
+  background-color: rgba(84, 80, 128, 0.356);
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 22px;
+  text-align: left;
+  white-space: normal;
+  color: whitesmoke;
+}
+.Random-Blogs-Grid-Container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #32bb7091;
+  padding: 30px;
+  gap: 20px;
+}
+.Random-Grid-Items{
+  background-color: rgba(62, 126, 100, 0.356);
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 22px;
+  text-align: left;
+  white-space: normal;
+  color: whitesmoke;
 }
