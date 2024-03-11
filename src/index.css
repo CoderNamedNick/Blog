@@ -14,10 +14,10 @@ code {
 
 .Main-App-Div {
   text-align: center;
-  background-color: rgb(26, 90, 99);
+  background-color: rgb(31, 95, 104);
   color: rgb(154, 228, 238);
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .Header-welcome-div {
   position: fixed;
@@ -74,4 +74,18 @@ a{
 
 a:hover{
   font-weight: 700;
+}
+.Coding-Blogs-Grid-Container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #5b6974;
+  padding: 10px;
+}
+.Grid-Items{
+  background-color: rgba(43, 148, 139, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: left;
+  white-space: normal;
 }
