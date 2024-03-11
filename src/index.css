@@ -27,14 +27,16 @@ code {
   color: white;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .list-div {
-  height: 86px;
+  height: 102px;
   flex: 1;
   display: flex;
   flex-direction: row;
   background-color: rgb(18, 18, 18);
+  align-items: center;
 }
 li:hover{
   cursor: pointer;
@@ -55,7 +57,7 @@ li:hover{
 }
 @media only screen and (max-width: 650px) {
   h1,
-  h3 {
+  h2 {
     display: none; /* Hide h1 and h3 at 500px or less */
   }
 }
