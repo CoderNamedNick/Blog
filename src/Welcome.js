@@ -1,13 +1,20 @@
-import React from "react";
+import {useState} from "react";
 
-const Welcome = () => {
+const Welcome = ({BlogClick}) => {
+  const [OnBlogs, setOnBlogs] = useState(false)
+
+  const BlogClick2 = () => {
+    BlogClick()
+    setOnBlogs(true)
+  }
+
   return(
     <div>
       <div className="Header-welcome-div">
         <h1>Nick.Blog</h1>
         <div className="list-div">
           <ul className="welcome-list">
-            <li>Most Recent Blog</li>
+            <li onClick={BlogClick2}>Most Recent Blog</li>
             <li>Code Related</li>
             <li>Family/Friends</li>
             <li>Work</li>
@@ -16,7 +23,8 @@ const Welcome = () => {
         </div>
         <h2>Support Nick.Blog</h2>
       </div>
-      <div className="intro-div">
+      {OnBlogs && (
+        <div className="intro-div">
         <h1>Who Am I</h1>
         <p className="intro-p">
           Hello my name is Nick or CoderNamedNick on Github.
@@ -36,6 +44,7 @@ const Welcome = () => {
         <h2>See my Projects at <a href="https://github.com/CoderNamedNick">Github</a></h2>
         <br></br>
       </div>
+      )}
     </div>
   )
 }

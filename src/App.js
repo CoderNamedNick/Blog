@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Welcome from './Welcome';
 import HomePage from './HomePage';
+import BlogTemplate from './BlogTemplate';
 
 function App() {
   const [OnBlog, setOnBlog] = useState(false)
@@ -8,6 +9,9 @@ function App() {
 
   const HandleBlogClick = () => {
     setOnBlog(true)
+  }
+  const HandleExitBlogClick = () => {
+    setOnBlog(false)
   }
 
   return (
@@ -20,7 +24,7 @@ function App() {
       )}
       {OnBlog && (
         <div className="Blog-Div">
-
+          <BlogTemplate ExitBlogClick={HandleExitBlogClick}/>
         </div>
       )}
     </div>

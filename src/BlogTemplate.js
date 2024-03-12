@@ -1,10 +1,13 @@
 import React from "react";
 import Welcome from "./Welcome";
 
-const BlogTemplate = () => {
+const BlogTemplate = ({ExitBlogClick}) => {
   return(
     <div>
       <Welcome />
+      <br></br>
+      <br></br>
+      <br></br>
       <br></br>
       <br></br>
       <br></br>
