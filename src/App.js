@@ -18,13 +18,13 @@ function App() {
     <div className="Main-App-Div">
       {!OnBlog && (
         <div>
-        <Welcome BlogClick={HandleBlogClick} />
+        <Welcome BlogClick={HandleBlogClick} ExitBlogClick={HandleExitBlogClick} />
         <HomePage BlogClick={HandleBlogClick}/>
         </div>
       )}
       {OnBlog && (
         <div className="Blog-Div">
-          <BlogTemplate ExitBlogClick={HandleExitBlogClick}/>
+          <BlogTemplate BlogClick={HandleBlogClick} ExitBlogClick={HandleExitBlogClick}/>
         </div>
       )}
     </div>

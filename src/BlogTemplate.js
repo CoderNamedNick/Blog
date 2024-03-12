@@ -1,21 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import Welcome from "./Welcome";
 
-const BlogTemplate = ({ExitBlogClick}) => {
-  return(
-    <div>
-      <Welcome />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <div>
-        Put Blog Here
-      </div>
-    </div>
-  )
-}
+const BlogTemplate = ({ BlogClick, ExitBlogClick }) => {
+  const [onBlogs, setOnBlogs] = useState(true);
 
-export default BlogTemplate
+  const handleBlogClick = () => {
+    BlogClick(); // Call BlogClick function
+  };
+
+  return (
+    <div>
+      <Welcome BlogClick={handleBlogClick} ExitBlogClick={ExitBlogClick} onBlogs={onBlogs} />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div>Put Blog Here</div>
+    </div>
+  );
+};
+
+export default BlogTemplate;
