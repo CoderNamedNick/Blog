@@ -1,14 +1,18 @@
 import React from "react";
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Header = () => {
   return (
     <div>
       <div className="Header-welcome-div">
-        <h1>Nick.Blog</h1>
+        {/* Use Link component with 'to' prop pointing to the homepage */}
+        <Link to="/">
+          <h1>Nick.Blog</h1>
+        </Link>
         <div className="list-div">
           <ul className="welcome-list">
             <li>Most Recent Blog</li>
-            <li>Code Related</li>
+            <Link to="/AllCoding"><li>Code Related</li></Link>
             <li>Family/Friends</li>
             <li>Work</li>
             <li>Other Topics</li>

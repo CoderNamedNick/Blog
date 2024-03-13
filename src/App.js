@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import HomePage from './HomePage';
+import ALLCodingBlogs from './AllCodingBlogs';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
         <Header />
         <div className='Content-div'>
           <Routes>
-            <Route path='/' element={<HomePage />} />
+            <Route exact path='/' element={<HomePage />} />
+            <Route path='/AllCoding' element={<ALLCodingBlogs />} />
           </Routes>
         </div>
       </div>
