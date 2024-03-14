@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ALLCodingBlogs = () => {
   return(
@@ -13,6 +14,7 @@ const ALLCodingBlogs = () => {
         and Everything coding related.
       </p>
       <div className="Coding-Blogs-Grid-Container">
+        <Link to="/AllCoding/CB1">
         <div className="Coding-Grid-Items">
           Topic: NOT AVAILABLE
           <br></br>
@@ -20,6 +22,8 @@ const ALLCodingBlogs = () => {
           <br></br>
           Thoughts: NOT AVAILABLE
         </div>
+        </Link>
+
       </div>
     </div>
   )
