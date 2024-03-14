@@ -37,7 +37,9 @@ const HomePage = () => {
         <h1>Code Related</h1>
         <Link to="/AllCoding"><h3>See All Coding Blogs</h3></Link>
       </div>
+      <h3>Most Recent</h3>
       <div className="Coding-Blogs-Grid-Container">
+      <Link to="/AllCoding/CB1">
         <div className="Coding-Grid-Items">
           Topic: NOT AVAILABLE
           <br></br>
@@ -45,6 +47,7 @@ const HomePage = () => {
           <br></br>
           Thoughts: NOT AVAILABLE
         </div>
+        </Link>
         <div className="Coding-Grid-Items">
           Topic: NOT AVAILABLE
           <br></br>
