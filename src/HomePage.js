@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return(
@@ -34,7 +35,7 @@ const HomePage = () => {
       </div>
       <div>
         <h1>Code Related</h1>
-        <h3>See All Coding Blogs</h3>
+        <Link to="/AllCoding"><h3>See All Coding Blogs</h3></Link>
       </div>
       <div className="Coding-Blogs-Grid-Container">
         <div className="Coding-Grid-Items">
