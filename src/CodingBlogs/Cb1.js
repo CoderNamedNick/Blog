@@ -9,7 +9,7 @@ const Cb1 = () => {
       <br></br>
       <br></br>
       <br></br>
-      <h1>Topic: Making This Blog</h1>
+      <h1>Topic: Making The Blog</h1>
       <div className="h3-div">
         <h3 className="CBs-h3s">Date: 3/15/24</h3>
         <h3 className="CBs-h3s">Main Thoughts: Relaxing, Easy, New</h3>

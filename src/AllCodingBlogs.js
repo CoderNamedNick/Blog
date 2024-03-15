@@ -17,11 +17,11 @@ const ALLCodingBlogs = () => {
       <div className="Coding-Blogs-Grid-Container">
         <Link to="/AllCoding/CB1">
         <div className="Coding-Grid-Items">
-          Topic: NOT AVAILABLE
+          Topic: Making The Blog
           <br></br>
-          Date: NOT AVAILABLE
+          Date:  3/15/24
           <br></br>
-          Thoughts: NOT AVAILABLE
+          Thoughts: Relaxing, Easy, New
         </div>
         </Link>
         <div className="Coding-Grid-Items">

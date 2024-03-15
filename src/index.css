@@ -28,6 +28,7 @@ code {
   display: flex;
   flex-direction: row;
   align-items: center;
+  z-index: 1000;
 }
 
 .list-div {
@@ -171,4 +172,5 @@ a:hover{
   position: absolute;
   top: 22%;
   left: 0;
+  z-index: 1;
 }
