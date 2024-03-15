@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import HomePage from './HomePage';
 import ALLCodingBlogs from './AllCodingBlogs';
-import Cb1 from './CodingBlogs/Cb#1';
+import Cb1 from './CodingBlogs/Cb1';
 
 function App() {
   return (

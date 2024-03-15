@@ -156,3 +156,19 @@ a:hover{
   padding: 20px;
   padding-bottom: 40px;
 }
+.Cbs-main-divs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: rgb(162, 225, 233);
+}
+.h3-div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 22%;
+  left: 0;
+}
