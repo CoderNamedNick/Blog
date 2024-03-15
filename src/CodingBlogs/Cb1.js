@@ -9,10 +9,10 @@ const Cb1 = () => {
       <br></br>
       <br></br>
       <br></br>
-      <h1>Topic:</h1>
+      <h1>Topic: Making This Blog</h1>
       <div className="h3-div">
-        <h3 className="CBs-h3s">Date:</h3>
-        <h3 className="CBs-h3s">Main Thoughts:</h3>
+        <h3 className="CBs-h3s">Date: 3/15/24</h3>
+        <h3 className="CBs-h3s">Main Thoughts: Relaxing, Easy, New</h3>
       </div>
       <br></br>
       <br></br>
@@ -20,11 +20,18 @@ const Cb1 = () => {
       <br></br>
       <br></br>
       <p className="All-coding-p">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod, libero non sollicitudin aliquet, ipsum justo semper metus, nec interdum leo risus ac nibh. Integer et fermentum leo. Nullam tempor lacinia nisi, non laoreet eros lobortis et. Sed convallis, ipsum non lacinia vehicula, felis velit consequat mauris, vitae tincidunt urna est vitae elit. Donec non dolor ac libero ullamcorper auctor. Sed non ligula neque. Phasellus rutrum varius nibh non posuere. Fusce gravida ipsum eget mauris fermentum, non interdum mi tristique. Vestibulum consequat nec risus sit amet fringilla. Duis tempor nulla nec justo tincidunt, id elementum dui pulvinar. Donec sed nisi ac leo vestibulum vehicula. Mauris eget purus nec est suscipit auctor. Nulla facilisi. Aliquam ac ante tincidunt, accumsan urna id, ultrices mauris. Cras eget viverra libero.
-
-        Proin eleifend, justo sed efficitur viverra, leo tortor dictum dui, sit amet laoreet justo ligula non purus. Maecenas interdum libero at erat finibus, quis fermentum nunc finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec augue sit amet justo fringilla lacinia. Sed accumsan velit nec aliquet auctor. In hac habitasse platea dictumst. Nullam sit amet dolor massa. Mauris ac volutpat dolor. Ut sagittis auctor libero, non faucibus felis. Nulla facilisi. Integer vel magna nec enim aliquet interdum at vitae leo. Sed tempor purus vitae libero fermentum, id fermentum lectus luctus. Duis faucibus lorem sit amet risus luctus, non vestibulum eros varius. Integer rhoncus ante sit amet ex varius, a finibus tortor hendrerit. Nullam euismod nisi at velit malesuada, non malesuada libero fermentum. Suspendisse potenti.
+        Hello and welcome to the first Offical Blog post of Nick.Blog! i think there is no better place than to start with how im making this blog.
+        I am making this blog first and foremost for my portfolio and so that not only you but employers can get to know me to.
+        This blog is made from the React Libary, with a few NPM add ons but mostly just React. doing this with react is alot easier then what just 
+        plane JS code can be. This blog has yet to give me massive trouble but I did learn some New things. I learned Links and Routes, ect.
+        If you dont know what that is It how react Apps have "Multiple Pages". Doing this blog makes me feel calm as im not rushing to get anything new out as where my other
+        projects i felt rushed and stress to do something "cool" or "Advanced" with most of this Its Just simple JSX.
       </p>
-      {/* Display specific blog data here */}
+      <p className="All-coding-p">
+        From me to you ill pass a few tips to make a blog if in the future you see yourself doing the same.
+        Step 1: Do It. Me myself im a huge procrastinater instead of reveiwing code or look up react courses in 2 hours ill probably be nose deep in a video game
+        so hey save the trouble of not doing it and do it.
+      </p>
     </div>
   );
 };
