@@ -90,8 +90,9 @@ const HomePage = () => {
       <br></br>
       <div>
         <h1>Personal Related</h1>
-        <h3>See All Personal Blogs</h3>
+        <Link to="/PersonalBlogs"><h3>See All Personal Blogs</h3></Link>
       </div>
+      <h3>Most Recent</h3>
       <div className="Family-Blogs-Grid-Container">
         <div className="Family-Grid-Items">
           Topic: NOT AVAILABLE
@@ -144,6 +145,7 @@ const HomePage = () => {
         <h1>Work Related</h1>
         <h3>See All Work Blogs</h3>
       </div>
+      <h3>Most Recent</h3>
       <div className="Work-Blogs-Grid-Container">
         <div className="Work-Grid-Items">
           Topic: NOT AVAILABLE
@@ -196,6 +198,7 @@ const HomePage = () => {
         <h1>Random Topics</h1>
         <h3>See All Random Blogs</h3>
       </div>
+      <h3>Most Recent</h3>
       <div className="Random-Blogs-Grid-Container">
         <div className="Random-Grid-Items">
           Topic: NOT AVAILABLE
