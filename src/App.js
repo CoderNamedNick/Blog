@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import HomePage from './HomePage';
 import ALLCodingBlogs from './AllCodingBlogs';
+import ALLRecentBlogs from './AllRecentBlogs';
 import Cb1 from './CodingBlogs/Cb1';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route exact path='/' element={<HomePage />} />
             <Route path='/AllCoding' element={<ALLCodingBlogs />} />
+            <Route path='/RecentBlogs' element={<ALLRecentBlogs />} />
             <Route path='/AllCoding/CB1' element={<Cb1 />} />
           </Routes>
         </div>

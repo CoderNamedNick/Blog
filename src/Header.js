@@ -11,7 +11,7 @@ const Header = () => {
         </Link>
         <div className="list-div">
           <ul className="welcome-list">
-            <li>Most Recent Blog</li>
+            <Link to="/RecentBlogs"><li>Most Recent Blog</li></Link>
             <Link to="/AllCoding"><li>Code Related</li></Link>
             <li>Family/Friends</li>
             <li>Work</li>
