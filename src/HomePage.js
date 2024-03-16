@@ -89,8 +89,8 @@ const HomePage = () => {
       <br></br>
       <br></br>
       <div>
-        <h1>Family/Friends Related</h1>
-        <h3>See All Family/Friends Blogs</h3>
+        <h1>Personal Related</h1>
+        <h3>See All Personal Blogs</h3>
       </div>
       <div className="Family-Blogs-Grid-Container">
         <div className="Family-Grid-Items">

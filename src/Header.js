@@ -13,7 +13,7 @@ const Header = () => {
           <ul className="welcome-list">
             <Link to="/RecentBlogs"><li>Most Recent Blog</li></Link>
             <Link to="/AllCoding"><li>Code Related</li></Link>
-            <li>Family/Friends</li>
+            <Link to="/PersonalBlogs"><li>Personal</li></Link>
             <li>Work</li>
             <li>Other Topics</li>
           </ul>

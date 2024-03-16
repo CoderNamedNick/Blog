@@ -3,6 +3,7 @@ import Header from './Header';
 import HomePage from './HomePage';
 import ALLCodingBlogs from './AllCodingBlogs';
 import ALLRecentBlogs from './AllRecentBlogs';
+import ALLPersonalBlogs from './AllPersonalBlogs';
 import Cb1 from './CodingBlogs/Cb1';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Route exact path='/' element={<HomePage />} />
             <Route path='/AllCoding' element={<ALLCodingBlogs />} />
             <Route path='/RecentBlogs' element={<ALLRecentBlogs />} />
+            <Route path='/PersonalBlogs' element={<ALLPersonalBlogs />} />
             <Route path='/AllCoding/CB1' element={<Cb1 />} />
           </Routes>
         </div>
