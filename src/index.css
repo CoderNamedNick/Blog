@@ -217,3 +217,12 @@ a:hover{
   color: rgb(0, 0, 0);
   background-color: #182a63;
 }
+.Personal-homepage-div{
+  background-color: #6d1770c2;
+}
+.Work-homepage-div{
+  background-color: #11538ac2;
+}
+.Random-homepage-div{
+  background-color: #367e5265;
+}

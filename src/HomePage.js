@@ -84,169 +84,175 @@ const HomePage = () => {
           Thoughts: NOT AVAILABLE
         </div>
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <div>
-        <h1>Personal Related</h1>
-        <Link to="/PersonalBlogs"><h3>See All Personal Blogs</h3></Link>
-      </div>
-      <h3>Most Recent</h3>
-      <div className="Family-Blogs-Grid-Container">
-        <div className="Family-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
+      <div className="Personal-homepage-div">
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div>
+          <h1>Personal Related</h1>
+          <Link to="/PersonalBlogs"><h3>See All Personal Blogs</h3></Link>
         </div>
-        <div className="Family-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Family-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Family-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Family-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Family-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-      </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <div>
-        <h1>Work Related</h1>
-        <Link to="/WorkBlogs"><h3>See All Work Blogs</h3></Link>
-      </div>
-      <h3>Most Recent</h3>
-      <div className="Work-Blogs-Grid-Container">
-        <div className="Work-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Work-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Work-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Work-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Work-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Work-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
+        <h3>Most Recent</h3>
+        <div className="Family-Blogs-Grid-Container">
+          <div className="Family-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Family-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Family-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Family-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Family-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Family-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
         </div>
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <div>
-        <h1>Random Topics</h1>
-        <h3>See All Random Blogs</h3>
+      <div className="Work-homepage-div">
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div>
+          <h1>Work Related</h1>
+          <Link to="/WorkBlogs"><h3>See All Work Blogs</h3></Link>
+        </div>
+        <h3>Most Recent</h3>
+        <div className="Work-Blogs-Grid-Container">
+          <div className="Work-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Work-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Work-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Work-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Work-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Work-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+        </div>
       </div>
-      <h3>Most Recent</h3>
-      <div className="Random-Blogs-Grid-Container">
-        <div className="Random-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
+      <div className="Random-homepage-div">
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div>
+          <h1>Random Topics</h1>
+          <h3>See All Random Blogs</h3>
         </div>
-        <div className="Random-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
+        <h3>Most Recent</h3>
+        <div className="Random-Blogs-Grid-Container">
+          <div className="Random-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Random-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Random-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Random-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Random-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
+          <div className="Random-Grid-Items">
+            Topic: NOT AVAILABLE
+            <br></br>
+            Date: NOT AVAILABLE
+            <br></br>
+            Thoughts: NOT AVAILABLE
+          </div>
         </div>
-        <div className="Random-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Random-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Random-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Random-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
     </div>
   )
 }
