@@ -14,7 +14,7 @@ const Header = () => {
             <Link to="/RecentBlogs"><li>Most Recent Blog</li></Link>
             <Link to="/AllCoding"><li>Code Related</li></Link>
             <Link to="/PersonalBlogs"><li>Personal</li></Link>
-            <li>Work</li>
+            <Link to="/WorkBlogs"><li>Work</li></Link>
             <li>Other Topics</li>
           </ul>
         </div>
