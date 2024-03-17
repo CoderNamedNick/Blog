@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ALLWorkBlogs = () => {
   return(
-    <div className="All-Personal-Main-div">
+    <div className="All-Work-Main-div">
       <br></br>
       <br></br>
       <br></br>

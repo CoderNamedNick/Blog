@@ -143,7 +143,7 @@ const HomePage = () => {
       <br></br>
       <div>
         <h1>Work Related</h1>
-        <h3>See All Work Blogs</h3>
+        <Link to="/WorkBlogs"><h3>See All Work Blogs</h3></Link>
       </div>
       <h3>Most Recent</h3>
       <div className="Work-Blogs-Grid-Container">
