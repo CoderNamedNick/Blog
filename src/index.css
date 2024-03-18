@@ -246,3 +246,27 @@ a:hover{
 .Random-homepage-div{
   background-color: #367e5265;
 }
+@keyframes changeColor2 {
+  0% {
+    background-color: rgb(3, 28, 83);
+  }
+  100% {
+    background-color: rgb(5, 78, 173);
+  }
+}
+.Wbs-main-divs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  animation: changeColor2 5s infinite alternate;
+  color: rgb(192, 200, 245);
+  font-weight: 200;
+}
+.All-Work-p{
+  font-size: 26px;
+  font-weight: 500;
+  padding: 20px;
+  padding-bottom: 40px;
+}

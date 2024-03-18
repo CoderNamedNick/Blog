@@ -8,6 +8,7 @@ import ALLPersonalBlogs from './AllPersonalBlogs';
 import ALLWorkBlogs from './AllWorkBlogs';
 import ALLRandomBlogs from './AllRandomBlogs';
 import Cb1 from './CodingBlogs/Cb1';
+import Wb1 from './WorkBlogs/Wb1';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path='/WorkBlogs' element={<ALLWorkBlogs />} />
             <Route path='/RandomBlogs' element={<ALLRandomBlogs />} />
             <Route path='/AllCoding/CB1' element={<Cb1 />} />
+            <Route path='/AllWork/WB1' element={<Wb1 />} />
           </Routes>
         </div>
         <Footer />

@@ -15,21 +15,23 @@ const ALLRecentBlogs = () => {
       </h2>
       <div className="Recent-blogs-Grid-Container">
         <Link to="/AllCoding/CB1">
-        <div className="Recent-Grid-Items">
-          Topic: Making The Blog
-          <br></br>
-          Date:  3/15/24
-          <br></br>
-          Thoughts: Relaxing, Easy, New
-        </div>
+          <div className="Recent-Grid-Items">
+            Topic: Making The Blog
+            <br></br>
+            Date:  3/15/24
+            <br></br>
+            Thoughts: Relaxing, Easy, New
+          </div>
         </Link>
-        <div className="Recent-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
+        <Link to='/AllWork/WB1'>
+          <div className="Recent-Grid-Items">
+            Topic: API's And Promises
+            <br></br>
+            Date: 3/18/24
+            <br></br>
+            Thoughts: Hard, Workload, Trying
+          </div>
+        </Link>
         <div className="Recent-Grid-Items">
           Topic: NOT AVAILABLE
           <br></br>
