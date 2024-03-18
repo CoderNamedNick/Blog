@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
+import Footer from './Footer';
 import HomePage from './HomePage';
 import ALLCodingBlogs from './AllCodingBlogs';
 import ALLRecentBlogs from './AllRecentBlogs';
@@ -22,6 +23,7 @@ function App() {
             <Route path='/AllCoding/CB1' element={<Cb1 />} />
           </Routes>
         </div>
+        <Footer />
       </div>
     </Router>
   );
