@@ -201,7 +201,7 @@ const HomePage = () => {
         <br></br>
         <div>
           <h1>Random Topics</h1>
-          <h3>See All Random Blogs</h3>
+          <Link to="/RandomBlogs"><h3>See All Random Blogs</h3></Link>
         </div>
         <h3>Most Recent</h3>
         <div className="Random-Blogs-Grid-Container">

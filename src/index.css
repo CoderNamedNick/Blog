@@ -38,6 +38,7 @@ code {
   flex-direction: row;
   background-color: rgb(18, 18, 18);
   align-items: center;
+  padding-right: 10px;
 }
 li:hover{
   cursor: pointer;
@@ -58,7 +59,7 @@ li:hover{
 }
 @media only screen and (max-width: 650px) {
   h1,
-  h2 {
+  h3 {
     display: none; /* Hide h1 and h3 at 500px or less */
   }
 }
@@ -226,6 +227,15 @@ a:hover{
   height: 100vh;
   color: rgb(0, 0, 0);
   background-color: #182a63;
+}
+.All-Random-Main-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  background-color: #558676;
 }
 .Personal-homepage-div{
   background-color: #6d1770c2;
