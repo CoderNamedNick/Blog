@@ -150,13 +150,15 @@ const HomePage = () => {
         </div>
         <h3>Most Recent</h3>
         <div className="Work-Blogs-Grid-Container">
+        <Link to='/AllWork/WB1'>
           <div className="Work-Grid-Items">
-            Topic: NOT AVAILABLE
+            Topic: API's And Promises
             <br></br>
-            Date: NOT AVAILABLE
+            Date: 3/18/24
             <br></br>
-            Thoughts: NOT AVAILABLE
+            Thoughts: Hard, Workload, Trying
           </div>
+        </Link>
           <div className="Work-Grid-Items">
             Topic: NOT AVAILABLE
             <br></br>

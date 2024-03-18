@@ -14,13 +14,15 @@ const ALLWorkBlogs = () => {
         A place where you get to peak in what i do in work, studying, or practice.
       </h2>
       <div className="Work-Blogs-Grid-Container">
-        <div className="Work-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
+      <Link to='/AllWork/WB1'>
+          <div className="Work-Grid-Items">
+            Topic: API's And Promises
+            <br></br>
+            Date: 3/18/24
+            <br></br>
+            Thoughts: Hard, Workload, Trying
+          </div>
+        </Link>
         <div className="Work-Grid-Items">
           Topic: NOT AVAILABLE
           <br></br>
