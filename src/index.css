@@ -63,10 +63,16 @@ li:hover{
     display: none; /* Hide h1 and h3 at 500px or less */
   }
 }
+.Homepage-main-div{
+  width: 100%;
+  background-color: #354d57;
+}
 .intro-div{
   padding-top: 100px;
+  padding-left: 5%;
 }
 .intro-p{
+  width: 90%;
   font-size: 32px;
   font-weight: 700;
 }
