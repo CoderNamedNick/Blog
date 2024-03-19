@@ -7,6 +7,7 @@ import ALLRecentBlogs from './AllRecentBlogs';
 import ALLPersonalBlogs from './AllPersonalBlogs';
 import ALLWorkBlogs from './AllWorkBlogs';
 import ALLRandomBlogs from './AllRandomBlogs';
+import SupportPage from './SupportPage';
 import Cb1 from './Blogs/CodingBlogs/Cb1';
 import Wb1 from './Blogs/WorkBlogs/Wb1';
 
@@ -23,6 +24,7 @@ function App() {
             <Route path='/PersonalBlogs' element={<ALLPersonalBlogs />} />
             <Route path='/WorkBlogs' element={<ALLWorkBlogs />} />
             <Route path='/RandomBlogs' element={<ALLRandomBlogs />} />
+            <Route path='/SupportPage' element={<SupportPage />} />
             <Route path='/AllCoding/CB1' element={<Cb1 />} />
             <Route path='/AllWork/WB1' element={<Wb1 />} />
           </Routes>

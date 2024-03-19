@@ -18,7 +18,7 @@ const Header = () => {
             <Link to='/RandomBlogs'><li>Other Topics</li></Link>
           </ul>
         </div>
-        <h3>Support Nick.Blog</h3>
+        <Link to="/SupportPage"><h3>Support Nick.Blog</h3></Link>
       </div>
     </div>
   );
