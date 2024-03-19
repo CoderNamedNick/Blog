@@ -7,8 +7,8 @@ import ALLRecentBlogs from './AllRecentBlogs';
 import ALLPersonalBlogs from './AllPersonalBlogs';
 import ALLWorkBlogs from './AllWorkBlogs';
 import ALLRandomBlogs from './AllRandomBlogs';
-import Cb1 from './CodingBlogs/Cb1';
-import Wb1 from './WorkBlogs/Wb1';
+import Cb1 from './Blogs/CodingBlogs/Cb1';
+import Wb1 from './Blogs/WorkBlogs/Wb1';
 
 function App() {
   return (
