@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ALLRecentBlogs = () => {
+const ALLRecentBlogs = ({blogs}) => {
+
+
   return(
     <div className="All-Recent-Main-div">
       <br></br>
@@ -14,39 +16,28 @@ const ALLRecentBlogs = () => {
         Recent Blogs about any topics
       </h2>
       <div className="Recent-blogs-Grid-Container">
-        <Link to="/AllCoding/CB1">
-          <div className="Recent-Grid-Items">
-            Topic: Making The Blog
-            <br></br>
-            Date:  3/15/24
-            <br></br>
-            Thoughts: Relaxing, Easy, New
-          </div>
-        </Link>
-        <Link to='/AllWork/WB1'>
-          <div className="Recent-Grid-Items">
-            Topic: API's And Promises
-            <br></br>
-            Date: 3/18/24
-            <br></br>
-            Thoughts: Hard, Workload, Trying
-          </div>
-        </Link>
-        <div className="Recent-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Recent-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-
+        {/* Map through the codingBlogs array and render each blog */}
+        {blogs.map((blog, index) => (
+          <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
+            <div className="Recent-Grid-Items">
+              <div>Topic: {blog.topic}</div>
+              <div>Date: {blog.date}</div>
+              <div>Thoughts: {blog.thoughts}</div>
+            </div>
+          </Link>
+        ))}
+        {/* If there are less than 6 blogs, render default templates */}
+        {blogs.length < 6 && (
+          Array.from({ length: 6 - blogs.length }).map((_, index) => (
+            <div key={index + blogs.length} className="Recent-Grid-Items">
+              <div>Topic: NOT AVAILABLE</div>
+              <br />
+              <div>Date: NOT AVAILABLE</div>
+              <br />
+              <div>Thoughts: NOT AVAILABLE</div>
+            </div>
+          ))
+        )}
       </div>
     </div>
   )

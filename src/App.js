@@ -8,6 +8,7 @@ import ALLPersonalBlogs from './AllPersonalBlogs';
 import ALLWorkBlogs from './AllWorkBlogs';
 import ALLRandomBlogs from './AllRandomBlogs';
 import SupportPage from './SupportPage';
+import CblogsTemplates from './CblogsTemplates';
 import Cb1 from './Blogs/CodingBlogs/Cb1';
 import Wb1 from './Blogs/WorkBlogs/Wb1';
 import blogs from './Blogs';
@@ -26,6 +27,7 @@ function App() {
             <Route path='/WorkBlogs' element={<ALLWorkBlogs blogs={blogs} />} />
             <Route path='/RandomBlogs' element={<ALLRandomBlogs blogs={blogs} />} />
             <Route path='/SupportPage' element={<SupportPage blogs={blogs} />} />
+            <Route path="/Coding/:id" element={<CblogsTemplates blogs={blogs} />} />
             <Route path='/AllCoding/CB1' element={<Cb1 blogs={blogs} />} />
             <Route path='/AllWork/WB1' element={<Wb1 blogs={blogs} />} />
           </Routes>

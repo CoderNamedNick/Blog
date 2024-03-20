@@ -47,7 +47,7 @@ const HomePage = ({blogs}) => {
       <div className="Coding-Blogs-Grid-Container">
         {/* Map through the codingBlogs array and render each blog */}
         {codingBlogs.map((blog, index) => (
-          <Link key={blog.id} to={`/AllCoding/${blog.id}`}>
+          <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
             <div className="Coding-Grid-Items">
               <div>Topic: {blog.topic}</div>
               <div>Date: {blog.date}</div>
