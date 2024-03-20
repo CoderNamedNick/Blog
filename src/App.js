@@ -10,6 +10,7 @@ import ALLRandomBlogs from './AllRandomBlogs';
 import SupportPage from './SupportPage';
 import Cb1 from './Blogs/CodingBlogs/Cb1';
 import Wb1 from './Blogs/WorkBlogs/Wb1';
+import blogs from './Blogs';
 
 function App() {
   return (
@@ -18,15 +19,15 @@ function App() {
         <Header />
         <div className='Content-div'>
           <Routes>
-            <Route exact path='/' element={<HomePage />} />
-            <Route path='/AllCoding' element={<ALLCodingBlogs />} />
-            <Route path='/RecentBlogs' element={<ALLRecentBlogs />} />
-            <Route path='/PersonalBlogs' element={<ALLPersonalBlogs />} />
-            <Route path='/WorkBlogs' element={<ALLWorkBlogs />} />
-            <Route path='/RandomBlogs' element={<ALLRandomBlogs />} />
-            <Route path='/SupportPage' element={<SupportPage />} />
-            <Route path='/AllCoding/CB1' element={<Cb1 />} />
-            <Route path='/AllWork/WB1' element={<Wb1 />} />
+            <Route exact path='/' element={<HomePage blogs={blogs} />} />
+            <Route path='/AllCoding' element={<ALLCodingBlogs blogs={blogs} />} />
+            <Route path='/RecentBlogs' element={<ALLRecentBlogs blogs={blogs} />} />
+            <Route path='/PersonalBlogs' element={<ALLPersonalBlogs blogs={blogs} />} />
+            <Route path='/WorkBlogs' element={<ALLWorkBlogs blogs={blogs} />} />
+            <Route path='/RandomBlogs' element={<ALLRandomBlogs blogs={blogs} />} />
+            <Route path='/SupportPage' element={<SupportPage blogs={blogs} />} />
+            <Route path='/AllCoding/CB1' element={<Cb1 blogs={blogs} />} />
+            <Route path='/AllWork/WB1' element={<Wb1 blogs={blogs} />} />
           </Routes>
         </div>
         <Footer />

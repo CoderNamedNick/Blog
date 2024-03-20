@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const HomePage = () => {
+const HomePage = ({blogs}) => {
+
+  const codingBlogs = blogs.filter(blog => blog.category === 'Coding');
+
+  console.log(codingBlogs)
+
+
   return(
     <div className="Homepage-main-div">
       <div className="intro-div">
@@ -39,50 +45,28 @@ const HomePage = () => {
       </div>
       <h3>Most Recent</h3>
       <div className="Coding-Blogs-Grid-Container">
-      <Link to="/AllCoding/CB1">
-        <div className="Coding-Grid-Items">
-          Topic: Making The Blog
-          <br></br>
-          Date:  3/15/24
-          <br></br>
-          Thoughts: Relaxing, Easy, New
-        </div>
-        </Link>
-        <div className="Coding-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Coding-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Coding-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Coding-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Coding-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
+        {/* Map through the codingBlogs array and render each blog */}
+        {codingBlogs.map((blog, index) => (
+          <Link key={blog.id} to={`/AllCoding/${blog.id}`}>
+            <div className="Coding-Grid-Items">
+              <div>Topic: {blog.topic}</div>
+              <div>Date: {blog.date}</div>
+              <div>Thoughts: {blog.thoughts}</div>
+            </div>
+          </Link>
+        ))}
+        {/* If there are less than 6 coding blogs, render default templates */}
+        {codingBlogs.length < 6 && (
+          Array.from({ length: 6 - codingBlogs.length }).map((_, index) => (
+            <div key={index + codingBlogs.length} className="Coding-Grid-Items">
+              <div>Topic: NOT AVAILABLE</div>
+              <br />
+              <div>Date: NOT AVAILABLE</div>
+              <br />
+              <div>Thoughts: NOT AVAILABLE</div>
+            </div>
+          ))
+        )}
       </div>
       <div className="Personal-homepage-div">
         <br></br>
