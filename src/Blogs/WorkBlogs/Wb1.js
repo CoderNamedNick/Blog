@@ -20,7 +20,6 @@ const Wb1 = () => {
       <br></br>
       <br></br>
       <p className="All-Work-p">
-        Of course, here's your text with corrections:
         Today is 3/18/24, and it's the very first day of "Work," even though I don't have a job.
          You can still work, and I mean work towards a job in my case. Yesterday I did some learning, and I want my workplace blogs to not only help myself jog my memory and write it down but also to assist anyone in my shoes going through what I am.
         Another quick note is before you learn or do anything new, or maybe you have 20+ years, just remember that you aren't expected to master anything in one day, and it will never happen. So, take your time and learn/work at your pace, and that's improvement.

@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ALLWorkBlogs = () => {
+const ALLWorkBlogs = ({blogs}) => {
+
+  const workBlogs = blogs.filter(blog => blog.category === 'Work');
+
   return(
     <div className="All-Work-Main-div">
       <br></br>
@@ -14,51 +17,29 @@ const ALLWorkBlogs = () => {
         A place where you get to peak in what i do in work, studying, or practice.
       </h2>
       <div className="Work-Blogs-Grid-Container">
-      <Link to='/AllWork/WB1'>
-          <div className="Work-Grid-Items">
-            Topic: API's And Promises
-            <br></br>
-            Date: 3/18/24
-            <br></br>
-            Thoughts: Hard, Workload, Trying
-          </div>
-        </Link>
-        <div className="Work-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
+          {/* Map through the workBlogs array and render each blog */}
+          {workBlogs.map((blog, index) => (
+            <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
+              <div className="Work-Grid-Items">
+                <div>Topic: {blog.topic}</div>
+                <div>Date: {blog.date}</div>
+                <div>Thoughts: {blog.thoughts}</div>
+              </div>
+            </Link>
+          ))}
+          {/* If there are less than 6 coding blogs, render default templates */}
+          {workBlogs.length < 6 && (
+            Array.from({ length: 6 - workBlogs.length }).map((_, index) => (
+              <div key={index + workBlogs.length} className="Work-Grid-Items">
+                <div>Topic: NOT AVAILABLE</div>
+                <br />
+                <div>Date: NOT AVAILABLE</div>
+                <br />
+                <div>Thoughts: NOT AVAILABLE</div>
+              </div>
+          ))
+        )}
         </div>
-        <div className="Work-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Work-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Work-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Work-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-      </div>
     </div>
   )
 }
