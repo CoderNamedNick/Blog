@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ALLPersonalBlogs = () => {
+const ALLPersonalBlogs = ({blogs}) => {
+
+  const personalBlogs = blogs.filter(blog => blog.category === 'Personal');
+
   return(
     <div className="All-Personal-Main-div">
       <br></br>
@@ -14,49 +17,27 @@ const ALLPersonalBlogs = () => {
         A place where i can talk about the good and the not so good of my Personal life.
       </h2>
       <div className="Family-Blogs-Grid-Container">
-        <div className="Family-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Family-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Family-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Family-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Family-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-        <div className="Family-Grid-Items">
-          Topic: NOT AVAILABLE
-          <br></br>
-          Date: NOT AVAILABLE
-          <br></br>
-          Thoughts: NOT AVAILABLE
-        </div>
-
+        {personalBlogs.map((blog, index) => (
+          <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
+            <div className="Family-Grid-Items">
+              <div>Topic: {blog.topic}</div>
+              <div>Date: {blog.date}</div>
+              <div>Thoughts: {blog.thoughts}</div>
+            </div>
+          </Link>
+        ))}
+        {/* If there are less than 6 coding blogs, render default templates */}
+        {personalBlogs.length < 6 && (
+          Array.from({ length: 6 - personalBlogs.length }).map((_, index) => (
+            <div key={index + personalBlogs.length} className="Family-Grid-Items">
+              <div>Topic: NOT AVAILABLE</div>
+              <br />
+              <div>Date: NOT AVAILABLE</div>
+              <br />
+              <div>Thoughts: NOT AVAILABLE</div>
+            </div>
+          ))
+        )}
       </div>
     </div>
   )

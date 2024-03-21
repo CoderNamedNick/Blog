@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ALLRandomBlogs = () => {
+const ALLRandomBlogs = ({blogs}) => {
+
+  const randomBlogs = blogs.filter(blog => blog.category === 'Personal');
+
   return(
     <div className="All-Random-Main-div">
       <br></br>
@@ -15,49 +18,28 @@ const ALLRandomBlogs = () => {
         Events, and other things.
       </h2>
       <div className="Random-Blogs-Grid-Container">
-          <div className="Random-Grid-Items">
-            Topic: NOT AVAILABLE
-            <br></br>
-            Date: NOT AVAILABLE
-            <br></br>
-            Thoughts: NOT AVAILABLE
-          </div>
-          <div className="Random-Grid-Items">
-            Topic: NOT AVAILABLE
-            <br></br>
-            Date: NOT AVAILABLE
-            <br></br>
-            Thoughts: NOT AVAILABLE
-          </div>
-          <div className="Random-Grid-Items">
-            Topic: NOT AVAILABLE
-            <br></br>
-            Date: NOT AVAILABLE
-            <br></br>
-            Thoughts: NOT AVAILABLE
-          </div>
-          <div className="Random-Grid-Items">
-            Topic: NOT AVAILABLE
-            <br></br>
-            Date: NOT AVAILABLE
-            <br></br>
-            Thoughts: NOT AVAILABLE
-          </div>
-          <div className="Random-Grid-Items">
-            Topic: NOT AVAILABLE
-            <br></br>
-            Date: NOT AVAILABLE
-            <br></br>
-            Thoughts: NOT AVAILABLE
-          </div>
-          <div className="Random-Grid-Items">
-            Topic: NOT AVAILABLE
-            <br></br>
-            Date: NOT AVAILABLE
-            <br></br>
-            Thoughts: NOT AVAILABLE
-          </div>
-        </div>
+        {randomBlogs.map((blog, index) => (
+          <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
+            <div className="Random-Grid-Items">
+              <div>Topic: {blog.topic}</div>
+              <div>Date: {blog.date}</div>
+              <div>Thoughts: {blog.thoughts}</div>
+            </div>
+          </Link>
+        ))}
+        {/* If there are less than 6 coding blogs, render default templates */}
+        {randomBlogs.length < 6 && (
+          Array.from({ length: 6 - randomBlogs.length }).map((_, index) => (
+            <div key={index + randomBlogs.length} className="Random-Grid-Items">
+              <div>Topic: NOT AVAILABLE</div>
+              <br />
+              <div>Date: NOT AVAILABLE</div>
+              <br />
+              <div>Thoughts: NOT AVAILABLE</div>
+            </div>
+          ))
+        )}
+      </div>
     </div>
   )
 }
