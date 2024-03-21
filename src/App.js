@@ -2,14 +2,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import HomePage from './HomePage';
-import ALLCodingBlogs from './AllCodingBlogs';
-import ALLRecentBlogs from './AllRecentBlogs';
-import ALLPersonalBlogs from './AllPersonalBlogs';
-import ALLWorkBlogs from './AllWorkBlogs';
-import ALLRandomBlogs from './AllRandomBlogs';
+import ALLCodingBlogs from './all blog pages/AllCodingBlogs';
+import ALLRecentBlogs from './all blog pages/AllRecentBlogs';
+import ALLPersonalBlogs from './all blog pages/AllPersonalBlogs';
+import ALLWorkBlogs from './all blog pages/AllWorkBlogs';
+import ALLRandomBlogs from './all blog pages/AllRandomBlogs';
 import SupportPage from './SupportPage';
-import CblogsTemplates from './CblogsTemplates';
-import WblogsTemplates from './WblogsTemplates';
+import CblogsTemplates from './blog templates/CblogsTemplates';
+import WblogsTemplates from './blog templates/WblogsTemplates';
 import blogs from './Blogs';
 
 function App() {
