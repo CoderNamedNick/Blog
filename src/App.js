@@ -10,6 +10,7 @@ import ALLRandomBlogs from './all blog pages/AllRandomBlogs';
 import SupportPage from './SupportPage';
 import CblogsTemplates from './blog templates/CblogsTemplates';
 import WblogsTemplates from './blog templates/WblogsTemplates';
+import PblogsTemplates from './blog templates/PblogsTemplates';
 import blogs from './Blogs';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path='/SupportPage' element={<SupportPage blogs={blogs} />} />
             <Route path="/Coding/:id" element={<CblogsTemplates blogs={blogs} />} />
             <Route path="/Work/:id" element={<WblogsTemplates blogs={blogs} />} />
+            <Route path="/Personal/:id" element={<PblogsTemplates blogs={blogs} />} />
           </Routes>
         </div>
         <Footer />

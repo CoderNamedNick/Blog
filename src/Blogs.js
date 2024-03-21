@@ -42,22 +42,11 @@ const blogs = [
   ] },
   {  id: 3, category: 'Personal', topic: `My Daily Life`, date: '3/21/24', thoughts: ' Routine, Fun, Study',
     Body: [
-      `Welocme to the First Personal Blog! These Blogs are going to be about daily personal Life.
-      mostly it will be venting,  maybe something interesting heppening at the moment, or possibly even some one on one talk with me on you about whet people talk about.
-      Todays topic is ganna be my daily life becouse right now you know of me but you dont know Nick.blog .
+      `Welcome to the First Personal Blog! These blogs are going to be about daily personal life. Mostly, it will be venting, maybe something interesting happening at the moment, or possibly even some one-on-one talk with me about what people talk about. Today's topic is going to be my daily life because right now you know of me, but you don't know Nick.blog.
       `,
-      `Most days I wake up at around 10 am, to take my partner to work i normal get my coffee too. 
-      I dont have alot of Friends so when i get home most of my days are spent coding or learning on some new coding topics, for example yesterday i watched videos on react props.
-      Even though i use them alot and feel like i knew the alot about them have someone explain it in a different way and use it is lime a big refresher.
-      to compare it to what everyone would get its like someone explaining how to jump, everyone knows how to jump but to see someone who is far better than you break it down is enteining and informative.
-      after coding and watching videos i like to look around at Github, i have an obssion with seeing my own repos and my little green squares i get for coding every day.`,
-      `In the Afternoon i like to relax Im an advid gamer i play LoL, Helldivers, and lately ive been into a farming game callled Palia.
-      after i get my partner from work and we go eat and we normaly spend time together. `, 
-      ` if you know me i Like going to the gym and lately i havent been in a minute to let my body stress levels go down.
-      Going to the gym is my number one recomended way to feel accomplished. I was going to the gym everyday for a whole year straight.
-      while doing cardio and weight training. right now Im 20, 5,7 145 pounds. In another personal blog i wanna talk about my gym routine and myabe other things.
-      what i want in my day is Accomplishment. i like to feel thta it was a day gained and not one lost.
-      Make your days one to make you feel the same.`
+      `Most days, I wake up at around 10 am to take my partner to work. I normally get my coffee too. I don't have a lot of friends, so when I get home, most of my days are spent coding or learning about some new coding topics. For example, yesterday, I watched videos on React props. Even though I use them a lot and feel like I know a lot about them, having someone explain it in a different way and use it is like a big refresher. To compare it to what everyone would get, it's like someone explaining how to jump. Everyone knows how to jump, but to see someone who is far better than you break it down is entertaining and informative. After coding and watching videos, I like to look around on GitHub. I have an obsession with seeing my own repos and the little green squares I get for coding every day.`,
+      `In the afternoon, I like to relax. I'm an avid gamer. I play LoL, Helldivers, and lately, I've been into a farming game called Palia. After I pick up my partner from work, we go eat, and we normally spend time together. We like playing games with each other or watching a show. Lately, we have been watching The Walking Dead and have made it to Season 8, so please don't spoil. `, 
+      `If you know me, I like going to the gym, and lately, I haven't been in a minute to let my body stress levels go down. Going to the gym is my number one recommended way to feel accomplished. I was going to the gym every day for a whole year straight, while doing cardio and weight training. Right now, I'm 20, 5'7", and 145 pounds. In another personal blog, I want to talk about my gym routine and maybe other things. What I want in my day is accomplishment. I like to feel that it was a day gained and not one lost. Make your days ones that make you feel the same.`
     ]
   }
 ];
