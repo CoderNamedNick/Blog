@@ -47,20 +47,22 @@ const HomePage = ({blogs}) => {
       <h3>Most Recent</h3>
       <div className="Coding-Blogs-Grid-Container">
         {/* Map through the codingBlogs array and render each blog */}
-        {codingBlogs.map((blog, index) => (
-          <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
-            <div className="Coding-Grid-Items">
-              <div>Topic: {blog.topic}</div>
-              <br/>
-              <div>Date: {blog.date}</div>
-              <br/>
-              <div>Thoughts: {blog.thoughts}</div>
-            </div>
-          </Link>
-        ))}
-        {/* If there are less than 6 coding blogs, render default templates */}
-        {codingBlogs.length < 6 && (
-          Array.from({ length: 6 - codingBlogs.length }).map((_, index) => (
+        {codingBlogs
+            .sort((a, b) => b.id - a.id)
+            .slice(0, 6)
+            .map((blog, index) => (
+              <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
+                <div className="Coding-Grid-Items">
+                  <div>Topic: {blog.topic}</div>
+                  <br/>
+                  <div>Date: {blog.date}</div>
+                  <br/>
+                  <div>Thoughts: {blog.thoughts}</div>
+                </div>
+              </Link>
+            ))}
+          {/* Render default templates if there are fewer than six items */}
+          {Array.from({ length: Math.max(6 - codingBlogs.length, 0) }).map((_, index) => (
             <div key={index + codingBlogs.length} className="Coding-Grid-Items">
               <div>Topic: NOT AVAILABLE</div>
               <br />
@@ -68,8 +70,7 @@ const HomePage = ({blogs}) => {
               <br />
               <div>Thoughts: NOT AVAILABLE</div>
             </div>
-          ))
-        )}
+          ))}
       </div>
       <div className="Personal-homepage-div">
         <br></br>
@@ -82,29 +83,30 @@ const HomePage = ({blogs}) => {
         </div>
         <h3>Most Recent</h3>
         <div className="Family-Blogs-Grid-Container">
-          {personalBlogs.map((blog, index) => (
-            <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
-              <div className="Family-Grid-Items">
-                <div>Topic: {blog.topic}</div>
-                <br/>
-                <div>Date: {blog.date}</div>
-                <br/>
-                <div>Thoughts: {blog.thoughts}</div>
-              </div>
-            </Link>
+        {personalBlogs
+            .sort((a, b) => b.id - a.id)
+            .slice(0, 6)
+            .map((blog, index) => (
+              <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
+                <div className="Family-Grid-Items">
+                  <div>Topic: {blog.topic}</div>
+                  <br/>
+                  <div>Date: {blog.date}</div>
+                  <br/>
+                  <div>Thoughts: {blog.thoughts}</div>
+                </div>
+              </Link>
+            ))}
+          {/* Render default templates if there are fewer than six items */}
+          {Array.from({ length: Math.max(6 - personalBlogs.length, 0) }).map((_, index) => (
+            <div key={index + personalBlogs.length} className="Family-Grid-Items">
+              <div>Topic: NOT AVAILABLE</div>
+              <br />
+              <div>Date: NOT AVAILABLE</div>
+              <br />
+              <div>Thoughts: NOT AVAILABLE</div>
+            </div>
           ))}
-          {/* If there are less than 6 coding blogs, render default templates */}
-          {personalBlogs.length < 6 && (
-            Array.from({ length: 6 - personalBlogs.length }).map((_, index) => (
-              <div key={index + personalBlogs.length} className="Family-Grid-Items">
-                <div>Topic: NOT AVAILABLE</div>
-                <br />
-                <div>Date: NOT AVAILABLE</div>
-                <br />
-                <div>Thoughts: NOT AVAILABLE</div>
-              </div>
-            ))
-          )}
         </div>
       </div>
       <div className="Work-homepage-div">
@@ -119,29 +121,30 @@ const HomePage = ({blogs}) => {
         <h3>Most Recent</h3>
         <div className="Work-Blogs-Grid-Container">
           {/* Map through the workBlogs array and render each blog */}
-          {workBlogs.map((blog, index) => (
-            <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
-              <div className="Work-Grid-Items">
-                <div>Topic: {blog.topic}</div>
-                <br/>
-                <div>Date: {blog.date}</div>
-                <br/>
-                <div>Thoughts: {blog.thoughts}</div>
-              </div>
-            </Link>
+          {workBlogs
+            .sort((a, b) => b.id - a.id)
+            .slice(0, 6)
+            .map((blog, index) => (
+              <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
+                <div className="Work-Grid-Items">
+                  <div>Topic: {blog.topic}</div>
+                  <br/>
+                  <div>Date: {blog.date}</div>
+                  <br/>
+                  <div>Thoughts: {blog.thoughts}</div>
+                </div>
+              </Link>
+            ))}
+          {/* Render default templates if there are fewer than six items */}
+          {Array.from({ length: Math.max(6 - workBlogs.length, 0) }).map((_, index) => (
+            <div key={index + workBlogs.length} className="Work-Grid-Items">
+              <div>Topic: NOT AVAILABLE</div>
+              <br />
+              <div>Date: NOT AVAILABLE</div>
+              <br />
+              <div>Thoughts: NOT AVAILABLE</div>
+            </div>
           ))}
-          {/* If there are less than 6 coding blogs, render default templates */}
-          {workBlogs.length < 6 && (
-            Array.from({ length: 6 - workBlogs.length }).map((_, index) => (
-              <div key={index + workBlogs.length} className="Work-Grid-Items">
-                <div>Topic: NOT AVAILABLE</div>
-                <br />
-                <div>Date: NOT AVAILABLE</div>
-                <br />
-                <div>Thoughts: NOT AVAILABLE</div>
-              </div>
-          ))
-        )}
         </div>
       </div>
       <div className="Random-homepage-div">
