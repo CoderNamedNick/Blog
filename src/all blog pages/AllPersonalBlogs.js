@@ -31,9 +31,7 @@ const ALLPersonalBlogs = ({blogs}) => {
           Array.from({ length: 6 - personalBlogs.length }).map((_, index) => (
             <div key={index + personalBlogs.length} className="Family-Grid-Items">
               <div>Topic: NOT AVAILABLE</div>
-              <br />
               <div>Date: NOT AVAILABLE</div>
-              <br />
               <div>Thoughts: NOT AVAILABLE</div>
             </div>
           ))

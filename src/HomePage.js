@@ -51,7 +51,9 @@ const HomePage = ({blogs}) => {
           <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
             <div className="Coding-Grid-Items">
               <div>Topic: {blog.topic}</div>
+              <br/>
               <div>Date: {blog.date}</div>
+              <br/>
               <div>Thoughts: {blog.thoughts}</div>
             </div>
           </Link>
@@ -84,7 +86,9 @@ const HomePage = ({blogs}) => {
             <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
               <div className="Family-Grid-Items">
                 <div>Topic: {blog.topic}</div>
+                <br/>
                 <div>Date: {blog.date}</div>
+                <br/>
                 <div>Thoughts: {blog.thoughts}</div>
               </div>
             </Link>
@@ -119,7 +123,9 @@ const HomePage = ({blogs}) => {
             <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
               <div className="Work-Grid-Items">
                 <div>Topic: {blog.topic}</div>
+                <br/>
                 <div>Date: {blog.date}</div>
+                <br/>
                 <div>Thoughts: {blog.thoughts}</div>
               </div>
             </Link>
@@ -153,7 +159,9 @@ const HomePage = ({blogs}) => {
               <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
                 <div className="Random-Grid-Items">
                   <div>Topic: {blog.topic}</div>
+                  <br/>
                   <div>Date: {blog.date}</div>
+                  <br/>
                   <div>Thoughts: {blog.thoughts}</div>
                 </div>
               </Link>

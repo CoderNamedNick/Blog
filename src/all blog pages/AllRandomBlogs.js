@@ -32,9 +32,7 @@ const ALLRandomBlogs = ({blogs}) => {
           Array.from({ length: 6 - randomBlogs.length }).map((_, index) => (
             <div key={index + randomBlogs.length} className="Random-Grid-Items">
               <div>Topic: NOT AVAILABLE</div>
-              <br />
               <div>Date: NOT AVAILABLE</div>
-              <br />
               <div>Thoughts: NOT AVAILABLE</div>
             </div>
           ))

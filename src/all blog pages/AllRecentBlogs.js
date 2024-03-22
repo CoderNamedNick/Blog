@@ -21,6 +21,7 @@ const ALLRecentBlogs = ({blogs}) => {
           <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
             <div className="Recent-Grid-Items">
               <div>Topic: {blog.topic}</div>
+              <div>Category: {blog.category}</div>  
               <div>Date: {blog.date}</div>
               <div>Thoughts: {blog.thoughts}</div>
             </div>
@@ -31,9 +32,8 @@ const ALLRecentBlogs = ({blogs}) => {
           Array.from({ length: 6 - blogs.length }).map((_, index) => (
             <div key={index + blogs.length} className="Recent-Grid-Items">
               <div>Topic: NOT AVAILABLE</div>
-              <br />
+              <div>Category: NOT AVAILABLE</div> 
               <div>Date: NOT AVAILABLE</div>
-              <br />
               <div>Thoughts: NOT AVAILABLE</div>
             </div>
           ))

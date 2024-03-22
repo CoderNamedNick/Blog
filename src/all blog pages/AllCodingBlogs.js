@@ -34,9 +34,7 @@ const ALLCodingBlogs = ({blogs}) => {
           Array.from({ length: 6 - codingBlogs.length }).map((_, index) => (
             <div key={index + codingBlogs.length} className="Coding-Grid-Items">
               <div>Topic: NOT AVAILABLE</div>
-              <br />
               <div>Date: NOT AVAILABLE</div>
-              <br />
               <div>Thoughts: NOT AVAILABLE</div>
             </div>
           ))
