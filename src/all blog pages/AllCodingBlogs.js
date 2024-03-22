@@ -40,6 +40,11 @@ const ALLCodingBlogs = ({blogs}) => {
           ))
         )}
       </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ALLRandomBlogs = ({blogs}) => {
 
-  const randomBlogs = blogs.filter(blog => blog.category === 'Personal');
+  const randomBlogs = blogs.filter(blog => blog.category === 'Random');
 
   return(
     <div className="All-Random-Main-div">
@@ -38,6 +38,11 @@ const ALLRandomBlogs = ({blogs}) => {
           ))
         )}
       </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </div>
   )
 }

@@ -155,7 +155,11 @@ const HomePage = ({blogs}) => {
         </div>
         <h3>Most Recent</h3>
         <div className="Random-Blogs-Grid-Container">
-          {randomBlogs.map((blog, index) => (
+          {/* Sort randomBlogs by ID and prioritize higher IDs */}
+          {randomBlogs
+            .sort((a, b) => b.id - a.id)
+            .slice(0, 6)
+            .map((blog, index) => (
               <Link key={blog.id} to={`/${blog.category}/${blog.id}`}>
                 <div className="Random-Grid-Items">
                   <div>Topic: {blog.topic}</div>
@@ -166,18 +170,16 @@ const HomePage = ({blogs}) => {
                 </div>
               </Link>
             ))}
-            {/* If there are less than 6 coding blogs, render default templates */}
-            {randomBlogs.length < 6 && (
-              Array.from({ length: 6 - randomBlogs.length }).map((_, index) => (
-                <div key={index + randomBlogs.length} className="Random-Grid-Items">
-                  <div>Topic: NOT AVAILABLE</div>
-                  <br />
-                  <div>Date: NOT AVAILABLE</div>
-                  <br />
-                  <div>Thoughts: NOT AVAILABLE</div>
-                </div>
-            ))
-          )}
+          {/* Render default templates if there are fewer than six items */}
+          {Array.from({ length: Math.max(6 - randomBlogs.length, 0) }).map((_, index) => (
+            <div key={index + randomBlogs.length} className="Random-Grid-Items">
+              <div>Topic: NOT AVAILABLE</div>
+              <br />
+              <div>Date: NOT AVAILABLE</div>
+              <br />
+              <div>Thoughts: NOT AVAILABLE</div>
+            </div>
+          ))}
         </div>
         <br></br>
         <br></br>

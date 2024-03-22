@@ -37,6 +37,11 @@ const ALLPersonalBlogs = ({blogs}) => {
           ))
         )}
       </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </div>
   )
 }
