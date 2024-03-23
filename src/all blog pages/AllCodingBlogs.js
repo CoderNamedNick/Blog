@@ -1,9 +1,13 @@
-import React from "react";
+import {useEffect} from "react";
 import { Link } from "react-router-dom";
 
 const ALLCodingBlogs = ({blogs}) => {
   
   const codingBlogs = blogs.filter(blog => blog.category === 'Coding');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
 
   return(

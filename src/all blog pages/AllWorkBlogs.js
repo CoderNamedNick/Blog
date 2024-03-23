@@ -1,9 +1,13 @@
-import React from "react";
+import {useEffect} from "react";
 import { Link } from "react-router-dom";
 
 const ALLWorkBlogs = ({blogs}) => {
 
   const workBlogs = blogs.filter(blog => blog.category === 'Work');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return(
     <div className="All-Work-Main-div">
