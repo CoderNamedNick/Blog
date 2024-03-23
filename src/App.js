@@ -16,7 +16,7 @@ import blogs from './Blogs';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Blog">
       <div className="Main-App-Div">
         <Header />
         <div className='Content-div'>
