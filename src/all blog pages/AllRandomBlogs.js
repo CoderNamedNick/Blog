@@ -45,6 +45,9 @@ const ALLRandomBlogs = ({blogs}) => {
       <br/>
       <br/>
       <br/>
+      <Link to="/">
+        <h1 className="h-head">HomePage</h1>
+      </Link>
       <br/>
       <br/>
     </div>

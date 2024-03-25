@@ -42,9 +42,12 @@ const ALLWorkBlogs = ({blogs}) => {
           ))
         )}
         </div>
-        <br/>
       <br/>
       <br/>
+      <br/>
+      <Link to="/">
+        <h1 className="h-head">HomePage</h1>
+      </Link>
       <br/>
       <br/>
     </div>

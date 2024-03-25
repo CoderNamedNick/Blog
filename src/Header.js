@@ -7,7 +7,7 @@ const Header = () => {
       <div className="Header-welcome-div">
         {/* Use Link component with 'to' prop pointing to the homepage */}
         <Link to="/">
-          <h1>Nick.Blog</h1>
+          <h1 className="h-head">Nick.Blog</h1>
         </Link>
         <div className="list-div">
           <ul className="welcome-list">
@@ -18,7 +18,7 @@ const Header = () => {
             <Link to='/RandomBlogs'><li>Random Topics</li></Link>
           </ul>
         </div>
-        <Link to="/SupportPage"><h3>Help Nick.Blog</h3></Link>
+        <Link to="/SupportPage"><h3 className="h-head">Help Nick.Blog</h3></Link>
       </div>
     </div>
   );

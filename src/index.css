@@ -58,8 +58,7 @@ li:hover{
   }
 }
 @media only screen and (max-width: 650px) {
-  h1,
-  h3 {
+  .h-head{
     display: none; /* Hide h1 and h3 at 500px or less */
   }
 }
@@ -86,6 +85,7 @@ a:hover{
   font-weight: 700;
   color: rgb(245, 211, 166);
 }
+
 .Coding-Blogs-Grid-Container{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -345,4 +345,22 @@ a:hover{
   font-size: 30px;
   width: 600px;
   display: inline-block;
+}
+@media only screen and (max-width: 700px) {
+  .Coding-Blogs-Grid-Container{
+    grid-template-columns: auto auto;
+  }
+  .Family-Blogs-Grid-Container{
+    grid-template-columns: auto auto;
+  }
+  .Work-Blogs-Grid-Container{
+    grid-template-columns: auto auto;
+  }
+  .Random-Blogs-Grid-Container{
+    grid-template-columns: auto auto;
+  }
+  .Recent-blogs-Grid-Container{
+    grid-template-columns: auto auto;
+  }
+  
 }
