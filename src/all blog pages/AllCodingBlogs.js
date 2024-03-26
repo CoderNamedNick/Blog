@@ -48,7 +48,7 @@ const ALLCodingBlogs = ({blogs}) => {
       <br/>
       <br/>
       <Link to="/">
-        <h1 className="h-head">HomePage</h1>
+        <h1>HomePage</h1>
       </Link>
       <br/>
       <br/>
