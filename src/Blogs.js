@@ -56,6 +56,18 @@ const blogs = [
     `Secondly, I am an avid anime and manga fan and own quite a bit of it. I mainly watched mainstream anime like One Piece and Naruto, with Hunter x Hunter being my favorite. But recently, I've been watching more romance-involved ones, and there are some good ones to watch. As of today, I started to re-read my graphic novels of Sword Art Online, one of my all-time favorites. Reading to me is like gaming too; it puts you in a world someone else made, with the added bonus that it's better on the eyes than gaming.`, 
     `My hobbies may not be numerous, but I tend not to let them interfere with my day-to-day activities. I see hobbies as something to indulge in only when I have the time. You will never see me playing a game or picking up a book instead of adding a new feature, studying my code, or spending time with my family. People tend to get absorbed in hobbies and forget about very important things. Make sure that YOU control your life.`
   ]
+  },
+  {  id: 4, category: 'Coding', topic: `Back End`, date: '3/30/24', thoughts: ' learning, rough, complicated',
+  Body: [
+    `Hello! It's been a while, and I have been on the 'grind,' learning more and more that I can to secure that all-impressive 'Junior Dev Job.' If you ever look at the jobs you are aiming for, it's not only a must to have the qualifications, but also extra skills. Since I am aiming for a Front End Dev position, I need to know front-end development, but why not at least know both?`,
+    `Learning back-end has actually been really fun and has given me a new joy while coding. There is a lot I still don't know about front-end, and that skill only improves with time. But learning back-end makes you feel that you understand the whole picture of what you are trying to do a little better. For example, it's like working at a bakery and never actually seeing how the bread you are selling is made. When you go and learn the processes, it improves not only the work that you have but also the understanding.` ,
+    `For learning backend, I like to break it down into two types:
+
+    The Database - I actually don't know a lot about databases, like queries and formats. Luckily, most sites handle almost everything for you and even provide a nice user interface to help. I use MongoDB, a backend database, which pretty much does everything for you, and with Mongoose, it's even easier.
+    
+    REST API / Endpoints - Look, I may have this wrong, but this is like the bread and butter of backend! You want to send user data to the database? HERE! JSON APIs? HERE! HTTP requests? HERE!"`, 
+    `As I'm still learning, I just wanted to talk about how this has given me a new perspective on front-end, and I enjoy backend a lot because it's a journey to learn. When I was hooked on front-end, it was the same. It's much more fun to learn!`
+  ]
 },];
 
 export default blogs;
