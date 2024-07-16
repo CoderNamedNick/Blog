@@ -57,7 +57,7 @@ const blogs = [
     `My hobbies may not be numerous, but I tend not to let them interfere with my day-to-day activities. I see hobbies as something to indulge in only when I have the time. You will never see me playing a game or picking up a book instead of adding a new feature, studying my code, or spending time with my family. People tend to get absorbed in hobbies and forget about very important things. Make sure that YOU control your life.`
   ]
   },
-  {  id: 4, category: 'Coding', topic: `Back End`, date: '3/30/24', thoughts: ' learning, rough, complicated',
+  {  id: 5, category: 'Coding', topic: `Back End`, date: '3/30/24', thoughts: ' learning, rough, complicated',
   Body: [
     `Hello! It's been a while, and I have been on the 'grind,' learning more and more that I can to secure that all-impressive 'Junior Dev Job.' If you ever look at the jobs you are aiming for, it's not only a must to have the qualifications, but also extra skills. Since I am aiming for a Front End Dev position, I need to know front-end development, but why not at least know both?`,
     `Learning back-end has actually been really fun and has given me a new joy while coding. There is a lot I still don't know about front-end, and that skill only improves with time. But learning back-end makes you feel that you understand the whole picture of what you are trying to do a little better. For example, it's like working at a bakery and never actually seeing how the bread you are selling is made. When you go and learn the processes, it improves not only the work that you have but also the understanding.` ,
@@ -67,6 +67,14 @@ const blogs = [
     
     REST API / Endpoints - Look, I may have this wrong, but this is like the bread and butter of backend! You want to send user data to the database? HERE! JSON APIs? HERE! HTTP requests? HERE!"`, 
     `As I'm still learning, I just wanted to talk about how this has given me a new perspective on front-end, and I enjoy backend a lot because it's a journey to learn. When I was hooked on front-end, it was the same. It's much more fun to learn!`
+  ]
+  },
+  {  id: 6, category: 'Coding', topic: `Tavern`, date: '7/16/24', thoughts: ' Forever, Sorry, Learning',
+  Body: [
+    `Hello and I am back. its been about 4 months since the Last blog, and no I have not quit! Lately ive been working on my new big project Tavern, A fantasy community hub. I wanna talk a little bit about why I made Tavern and what it has help me do. `,
+    `Building a website seem easy. All you have to do is find content that people would want put it one the internet and "BAM" website made! That seem easy but when you thing of content what comes to mind? For me nothing came to mind and to get a job in web developement "without schooling" is already hard enough. not to mention in earlier blogs i have no coding background! so i want to make something that shines and makes companies want to choose me. That being said the one and true way to make a website making employers want you is to make an awesome website.` ,
+    `Tavern was my first good idea I wanted to make something, Anything, That not only tested my "skills", but also made and forced me to learn new topics and make me better. Tavern is My first website that has a full backend service and completely made with the MERN stack ("MongoDB","Express JS","React JS","NODE JS"), I want to become a frontend developer, but knowing backend and DevOps is a huge spike on the resume! The resume comes after the website so i needed to put my head to the grind stone and actually work!  `, 
+    `Obviously I know that people dont read this random blog but someday I want where to look back at all my previous work and thoughts and if you are reading this. Thank you.`
   ]
 },];
 
