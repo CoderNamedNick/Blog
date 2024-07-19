@@ -28,7 +28,7 @@ const HomePage = ({blogs}) => {
         <br></br>
         <br></br>
         <h1>
-          <a href="https://codernamednick.github.io/react-portfolio/">
+          <a href="https://codernamednick.github.io/New-Portfolio/">
             Portfolio
           </a>
         </h1>

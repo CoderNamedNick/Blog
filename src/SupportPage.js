@@ -28,7 +28,7 @@ const SupportPage = () => {
         </div>
         <div>
           <p className="Support-p">
-            Look at my <a href="https://codernamednick.github.io/react-portfolio/">Portfolio</a> If you are Someone in need of a website. I would love 
+            Look at my <a href="https://codernamednick.github.io/New-Portfolio/">Portfolio</a> If you are Someone in need of a website. I would love 
             to try to work for you. If im not to busy "most days im not".
           </p>
         </div>

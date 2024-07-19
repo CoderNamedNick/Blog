@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer style={styles.footer}>
       <div>
-        <a href="https://codernamednick.github.io/react-portfolio/" style={styles.link}>Portfolio</a>
+        <a href="https://codernamednick.github.io/New-Portfolio/" style={styles.link}>Portfolio</a>
         <a href="https://github.com/CoderNamedNick" style={styles.link}>GitHub progress</a>
         <a href="mailto:nclloyd422@hotmail.com" style={styles.link}>Email Me Ideas</a>
       </div>
