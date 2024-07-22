@@ -189,7 +189,7 @@ a:hover{
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  top: 22%;
+  top: 25%;
   left: 2%;
   z-index: 1;
 }
@@ -339,11 +339,15 @@ a:hover{
   color: rgb(255, 248, 239);
   display: flex;
   flex-direction: column;
-  border: black solid 3px;
+  position: fixed;
+  width: 100%;
+  margin-top: 18%;
+  height: 90%;
+  overflow-y: auto;
 }
 .Support-p{
   font-size: 30px;
-  width: 600px;
+  width: 90%;
   display: inline-block;
 }
 @media only screen and (max-width: 700px) {
@@ -362,5 +366,17 @@ a:hover{
   .Recent-blogs-Grid-Container{
     grid-template-columns: auto auto;
   }
+  
+}
+@media only screen and (max-width: 450px) {
+  .welcome-list {
+    padding-left: 0px;
+    font-size: 18px;
+  }
+  .Coding-Blogs-Grid-Container, .Family-Blogs-Grid-Container,
+  .Work-Blogs-Grid-Container,  .Random-Blogs-Grid-Container, .Recent-blogs-Grid-Container {
+    grid-template-columns: auto;
+  }
+ 
   
 }

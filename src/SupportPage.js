@@ -4,16 +4,10 @@ const SupportPage = () => {
 
   return(
     <div className="SupportPage-main-div">
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <div>
         <h1>How To Suport Nick.Blogs</h1>
         <br></br>
-        <br></br>
-        <br></br>
+
         <div>
           <p className="Support-p">
             <a href="mailto:nclloyd422@hotmail.com" >Email Me Ideas</a>: This helps me come up with new ideas or even to help you on topics
