@@ -76,6 +76,15 @@ const blogs = [
     `Tavern was my first good idea I wanted to make something, Anything, That not only tested my "skills", but also made and forced me to learn new topics and make me better. Tavern is My first website that has a full backend service and completely made with the MERN stack ("MongoDB","Express JS","React JS","NODE JS"), I want to become a frontend developer, but knowing backend and DevOps is a huge spike on the resume! The resume comes after the website so i needed to put my head to the grind stone and actually work!  `, 
     `Obviously I know that people dont read this random blog but someday I want where to look back at all my previous work and thoughts and if you are reading this. Thank you.`
   ]
+},
+  {  id: 7, category: 'Personal', topic: `Finding A Job`, date: '7/23/24', thoughts: 'Depressing, Stressful, Rough',
+  Body: [
+    `Trying to find a job in 2024, the age of the words "everyone is hiring" is now. You all must know by now that I am a aspiring Web Developer. Sadly trying to get that role has been tough.
+    `,
+    `When i first started coding and wanted to make it into a career I knew that it would be hard. Web developers are not only helpful and open sourcing, but yet competive. And why would they not be? everyone wants to be better than the one that came before. I am no different I want to be better than the next and prove my skills to an employer. `,
+    `Being self taught and going through the youtube projects rabbit hole myself, you learn that not everything can be learned my videos. Doing, building something is what refines you knowledge. Getting a job it like the big test at the end of your journey, you get to show someone and prove that your skills and work that you have put in for the last years or longer can help. `, 
+    `Finding jobs are not hard! Finding the right job that will take a risk on you and let yourself prove that you could benifit them is the hard part. To someone in my shoes looking for a job and trying to be helpful you just have to grind, and I mean grind out tha=ose job forums. Websites like Ziprecruiter, Indeed, and Linkden are amazing in todays world. I wish everyone the best and for a lil sneak peak in a month and five days is me and my partners 3 years!`
+  ]
 },];
 
 export default blogs;
